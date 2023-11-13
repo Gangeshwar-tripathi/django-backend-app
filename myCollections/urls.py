@@ -3,7 +3,7 @@ from .views import RegisterUserView, MoviesListView, CollectionListView, Collect
     UserCreateView, UserDeleteView, UserListView
 
 urlpatterns = [
-    path('create/', UserCreateView.as_view(), name='user-create'),
+    path('create-user/', UserCreateView.as_view(), name='user-create'),
     path('users/', UserListView.as_view(), name='user-list'),
     path('delete/user/<int:pk>/', UserDeleteView.as_view(), name='user-delete'),
     path('register/', RegisterUserView.as_view(), name='register'),
