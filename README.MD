@@ -105,8 +105,32 @@
 
     - URL(DELETE): http://localhost:8000/collection/slug:collection_uuid
        - Deletes the collection having collection_uuid
-
-
+  
+      - URL(GET): http://localhost:8000/collection/detail/<slug:collection_uuid>
+           -Response JSON = {
+            "title": "Horror movies",
+            "description": "Kamjor dilwale naa dekhe..",
+            "movies": [
+          _{
+              "title": "Robin Hood",
+              "description": "Yet another version of the classic epic, with enough variation to make it interesting.",
+              "genres": "Drama,Action,Romance",
+              "uuid": "73399935-2165-41f0-a6a4-1336ef5e5c20"
+          },_
+          {
+              "title": "Caged Heat 3000",
+              "description": "It's the year 3000 AD. The world's most dangerous women are banished to a remote asteroid 45 million light years from earth.",
+              "genres": "Science Fiction",
+              "uuid": "129cf5d9-827c-4e42-843e-1f87ef99452f"
+          },
+          {
+              "title": "The incideous  7",
+              "description": "A film archivist revisits the story of Rustin Parr, a hermit thought to have murdered seven children while under the possession of the Blair Witch.",
+              "genres": "Horror",
+              "uuid": "5e904ce8-91b7-42b4-84d9-5b53f4cb8c74"
+          }
+      ]
+}
 - Collection List Detial
     - URL(GET): http://localhost:8000/<slug:collection_uuid>
         - Gets detail view for the collection

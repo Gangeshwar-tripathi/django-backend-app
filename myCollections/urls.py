@@ -10,6 +10,7 @@ urlpatterns = [
     path('movies/', MoviesListView.as_view(), name='movies'),
     path('collection/', CollectionListView.as_view(), name='collection'),
     path('collection/<slug:collection_uuid>/', CollectionListView.as_view(), name='detail-collection'),
+    path('collection/detail/<slug:collection_uuid>/', CollectionListDetailView.as_view(), name='detail-collection'),
     path('request-count/', RequestCountView.as_view(), name='request-count'),
     path('request-count/reset/', RequestCountView.as_view(), name='request-count-reset'),
 ]

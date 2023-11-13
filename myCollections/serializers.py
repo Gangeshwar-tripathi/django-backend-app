@@ -10,7 +10,7 @@ from .models import Collections, UserProfile
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Collections
-        fields = ["title", "description", "movies"]
+        fields = ["uuid","title", "description", "movies"]
 
 
 class UserSerializer(serializers.ModelSerializer):
