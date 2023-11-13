@@ -43,7 +43,7 @@
         },
 
 
-## This API  is to Delete one use using UserID  
+## This API  is to Delete one user using UserID  
 - Delete a User 
     - URL(DELETE): http://localhost:8000/delete/user/<userid:1>
       
